@@ -1,0 +1,21 @@
+#entrada
+ 
+entrada=input("Digite sua mensagem:\n")
+
+#filtro
+palavras_restritas = [
+"minha senha é", "meu token é", "minha chave é", "o código é","meu código","grave essa token",
+"meu acesso é", "password:", "senha de acesso", "chave secreta:","código de acesso","grave esse cvv",
+"meu cpf é", "número do cartão:", "cvv do cartão", "minha conta é","token para acesso","cpf","token",
+"usuário e senha", "login e pass", "minha credencial", "segue o token","decore a senha","rg","cvv",
+"anota minha senha", "guarde minha chave", "código de segurança", "auth token:","guarde a senha","banco",
+"minha private key", "chave privada é", "meu pin é", "código de verificação","meu documento é","senha",
+"meu e-mail é", "meu telefone é", "meu endereço é", "anota meu pix","chave do cliente","documento",
+"chave mestra:", "secret key:", "access key:", "api key:","senha do cliente","grave essa senha",
+"meu registro é", "identidade número", "documento oficial:", "meu rg é","chave de acesso","código",
+"senha do banco", "pin do celular", "senha do wifi", "minha master key","o token é","pin","essa senha",
+"a senha é a seguinte","essa é a senha","o token dela é","a chave dela é"]
+
+
+if any(palavra in entrada.lower() for palavra in palavras_restritas):
+    print("ATENÇÃO! Essa mensagem inclui dados restritos. Antes de enviar recomendamos que consulte seu gestor.")

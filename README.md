@@ -12,4 +12,4 @@ Condicional If/Else;
 Objetivo:
 Evoluir hablidades em Python;
 Treinar o uso do raciocínio para extratégias relacionadas a proteção de dados;
-<img 
+![](exemplo)
